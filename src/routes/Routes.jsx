@@ -4,19 +4,27 @@ import RootPage from "../layout/RootPage";
 import HomePage from "../pages/HomePage/HomePage";
 import TimeLine from "../pages/TimeLine/TimeLine";
 import Stats from "../pages/Stats/Stats";
+import FriendDetails from "../pages/FriendAbout/FriendAbout";
+import FriendAbout from "../pages/FriendAbout/FriendAbout";
 
 export const router = createBrowserRouter([
   { 
-    path: "/", 
+    path: '/', 
     Component: RootPage,
     children: [
         {
             index:true,
-            loader: () => fetch('friends.json'),
-            Component: HomePage
+            loader: () => fetch('/friends.json'),
+            Component: HomePage,
         },
         {path:'/timeline', Component: TimeLine},
         {path:'/stats', Component: Stats},
+        {   
+            path:'/friendAbout/:id',
+            loader: () => fetch('/friends.json'), 
+            Component: FriendAbout
+        },
     ],
   },
 ]);
+

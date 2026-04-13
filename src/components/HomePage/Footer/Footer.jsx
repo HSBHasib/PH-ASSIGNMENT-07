@@ -3,7 +3,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#244D3F] text-white pt-10 pb-4 px-6 sm:px-12 md:px-24">
+        <footer className="bg-[#244D3F] text-white pt-10 pb-4 px-6 sm:px-12 md:px-24 ">
             <div className="flex flex-col items-center text-center space-y-5">
                 <h2 className="text-4xl md:text-6xl font-bold tracking-tight">KeenKeeper</h2>
                 

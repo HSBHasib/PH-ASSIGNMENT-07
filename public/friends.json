@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Chen",
+    "picture": "https://randomuser.me",
+    "email": "sarah.chen@email.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["college", "tech"],
+    "bio": "Former coding bootcamp partner. Enjoys trying new ramen spots and bouldering.",
+    "goal": 14,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Thompson",
+    "picture": "https://randomuser.me",
+    "email": "m.thompson@workmail.org",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["childhood", "close friend"],
+    "bio": "Grew up on the same street. We usually catch up over basketball or weekend BBQs.",
+    "goal": 21,
+    "next_due_date": "2026-04-09"
+  },
+  {
+    "id": 3,
+    "name": "Elena Rodriguez",
+    "picture": "https://randomuser.me",
+    "email": "elena.rod@webmail.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": ["travel", "neighbor"],
+    "bio": "Met during a backpacking trip in Peru. She lives three blocks away now.",
+    "goal": 7,
+    "next_due_date": "2026-04-14"
+  },
+  {
+    "id": 4,
+    "name": "David Kim",
+    "picture": "https://randomuser.me",
+    "email": "dkim_photography@email.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["hobby", "creative"],
+    "bio": "Local photographer. We often go on morning photo walks to capture urban landscapes.",
+    "goal": 30,
+    "next_due_date": "2026-05-11"
+  },
+  {
+    "id": 5,
+    "name": "Jamie Vance",
+    "picture": "https://randomuser.me",
+    "email": "jvance88@provider.net",
+    "days_since_contact": 40,
+    "status": "overdue",
+    "tags": ["high school"],
+    "bio": "Old friend from the debate team. Need to check in on his new business venture.",
+    "goal": 30,
+    "next_due_date": "2026-03-17"
+  },
+  {
+    "id": 6,
+    "name": "Priya Sharma",
+    "picture": "https://randomuser.me",
+    "email": "priya.design@studios.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["work", "mentor"],
+    "bio": "Former manager who became a great mentor. Always has the best book recommendations.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 7,
+    "name": "Alex Rivera",
+    "picture": "https://randomuser.me",
+    "email": "arivera_fitness@email.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["gym", "close friend"],
+    "bio": "Accountability partner for morning workouts. Extremely motivated and reliable.",
+    "goal": 3,
+    "next_due_date": "2026-04-15"
+  }
+]
+

@@ -6,11 +6,6 @@ import { Link } from "react-router"
 
 const Navber = () => {
 
-  // <IoHomeOutline />
-  // <IoTimeOutline />
-  // <TfiStatsUp />
-
-
   const navItem = [
     { path: '/',         text: 'Home',     icon: <IoHomeOutline size={22} />},
     { path: '/timeline', text: 'Timeline', icon: <IoTimeOutline size={22} />},

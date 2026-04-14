@@ -11,7 +11,7 @@ const Navber = () => {
     { path: '/timeline', text: 'Timeline', icon: <IoTimeOutline size={22} />},
     { path: '/stats',    text: 'Stats',    icon: <TfiStatsUp    size={22} />},
   ]
-  
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start sm:px-10">
@@ -33,7 +33,7 @@ const Navber = () => {
         <img className="object-cover w-34" src={logo} alt="logo" />
       </Link>
   </div>
-  <div className="navbar-end hidden lg:flex">
+  <div className="navbar-end hidden list-none lg:flex">
     {
       navItem.map((data, idx) => 
         <li key={idx}><MyNavLink to={data.path}>{data.icon} {data.text}</MyNavLink></li> 
@@ -45,4 +45,3 @@ const Navber = () => {
 }
 
 export default Navber
-

@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiPhoneCall } from 'react-icons/fi';
 import { MdOutlineTextsms } from 'react-icons/md';
 import { PiBellSimpleZ, PiClockCounterClockwiseBold, PiVideoCameraBold } from 'react-icons/pi';
 import { RiArchiveLine, RiDeleteBinLine } from 'react-icons/ri';
 import { Link, useLoaderData, useParams } from 'react-router';
+import { FriendsContext } from '../../context/friendsDataProvider';
 
 const FriendAbout = () => {
     const friendData = useLoaderData();
     const { id: fdId } = useParams();
 
     const friend = friendData?.find(fd => Number(fd.id) === Number(fdId));
+
+    // ContextApi
+    const {friendsContactData, setFriendsContactData, hanldeFriendsContactData} = useContext(FriendsContext);
 
     if (!friend) {
         return (
@@ -78,7 +82,6 @@ const FriendAbout = () => {
 
                 {/* Right Column */}
                 <div className="lg:col-span-8 space-y-5">
-                    
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="h-34 w-auto flex flex-col items-center justify-center bg-white rounded-2xl border border-slate-200 shadow-sm text-center space-y-1">
                             <h2 className="text-4xl font-bold text-[#244D3F]">{friend.days_since_contact}</h2>
@@ -107,15 +110,18 @@ const FriendAbout = () => {
                     <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
                         <h3 className="text-lg text-[#244D3F] font-semibold mb-6">Quick Check-In</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <button className="flex flex-col items-center justify-center h-26 border border-gray-200 rounded-xl bg-[#F8FAFC] hover:bg-gray-100 transition gap- cursor-pointer active:scale-95">
+
+                            <button onClick={() => hanldeFriendsContactData(friend, 'Call')} className="flex flex-col items-center justify-center h-26 border border-gray-200 rounded-xl bg-[#F8FAFC] hover:bg-gray-100 transition gap- cursor-pointer active:scale-95">
                                 <FiPhoneCall size={22} />
                                 <span className="font-semibold text-slate-700">Call</span>
                             </button>
-                            <button className="flex flex-col items-center justify-center h-26 border border-gray-200 rounded-xl bg-[#F8FAFC] hover:bg-gray-100 transition gap- cursor-pointer active:scale-95">
+
+                            <button onClick={() => hanldeFriendsContactData(friend, 'Text')} className="flex flex-col items-center justify-center h-26 border border-gray-200 rounded-xl bg-[#F8FAFC] hover:bg-gray-100 transition gap- cursor-pointer active:scale-95">
                                 <MdOutlineTextsms size={22} />
                                 <span className="font-semibold text-slate-700">Text</span>
                             </button>
-                            <button className="flex flex-col items-center justify-center h-26 border border-gray-200 rounded-xl bg-[#F8FAFC] hover:bg-gray-100 transition gap- cursor-pointer active:scale-95">
+
+                            <button onClick={() => hanldeFriendsContactData(friend, 'Video')} className="flex flex-col items-center justify-center h-26 border border-gray-200 rounded-xl bg-[#F8FAFC] hover:bg-gray-100 transition gap- cursor-pointer active:scale-95">
                                 <PiVideoCameraBold size={22} />
                                 <span className="font-semibold text-slate-700">Video</span>
                             </button>

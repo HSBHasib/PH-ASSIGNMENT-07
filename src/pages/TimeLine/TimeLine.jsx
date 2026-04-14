@@ -67,10 +67,10 @@ const TimeLine = () => {
                           <div className="text-6xl mb-4 opacity-40">
                               📂
                           </div>
-                              <h3 className="text-xl font-semibold text-gray-800 ">
+                              <h3 className="max-[400px]:text-sm text-xl font-semibold text-gray-800 ">
                                   No Data Found
                               </h3>
-                              <p className="text-sm text-gray-500 max-w-[250px]">
+                              <p className="max-[400px]:text-[10px] text-sm text-gray-500 max-w-[250px]">
                                   We couldn't find any results.
                               </p>
                         </div>

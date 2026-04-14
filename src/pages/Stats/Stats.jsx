@@ -9,19 +9,19 @@ const Stats = () => {
     console.log(friendsContactData);
 
     if(friendsContactData.length === 0) {
-      return <div className="flex flex-col items-center justify-center w-3/4 mx-auto p-6 text-center">
+      return <div className="flex flex-col items-center justify-center max-[500px]:w-[90%] w-3/4 mx-auto p-6 text-center">
                 <div className="bg-white border border-gray-100 min-h-[50vh] rounded-lg p-8 shadow-sm w-full flex flex-col items-center justify-center">
 
                     <div className="space-y-2">
-                        <h2 className="text-xl font-bold text-[#1F2937]">Friendship Analytics</h2>
-                        <p className="text-gray-500 text-sm px-4">
+                        <h2 className=" max-[500px]:text-[17px] text-xl font-bold text-[#1F2937]">Friendship Analytics</h2>
+                        <p className="max-[500px]:text-[10px] text-gray-500 text-sm px-4">
                             No interaction data found yet! Start calling or texting your friends to see your friendship breakdown.
                         </p>
                     </div>
                     
                     <Link to='/'>
                       <button  
-                          className="cursor-pointer active:scale-95 mt-6 px-6 py-2 bg-[#244D3F] text-white rounded-lg text-sm font-medium hover:bg-opacity-90 transition-all"
+                          className="cursor-pointer active:scale-95 mt-6 px-6 py-2 bg-[#244D3F] text-white rounded-lg max-[500px]:text-[12px] text-sm font-medium hover:bg-opacity-90 transition-all"
                           >
                           Back to Home
                       </button>
@@ -54,8 +54,8 @@ const Stats = () => {
     ];
 
   return (
-      <div className='w-3/4 mx-auto pt-4 pb-10'>
-        <h1 className='text-[#1F2937] font-bold text-4xl py-6'>Friendship Analytics</h1>
+      <div className=' max-[500px]:w-[90%] w-3/4 mx-auto pt-4 pb-10 '>
+        <h1 className='text-[#1F2937] font-bold text-2xl sm:text-4xl py-6'>Friendship Analytics</h1>
         <div className='bg-white shadow-sm p-6 rounded-lg'>
           <h3 className=' font-semibold text-[#244D3F] text-[16px]'>By Interaction Type</h3>
           <div className='flex justify-center items-center h-[52vh] w-auto'>

@@ -6,6 +6,7 @@ import TimeLine from "../pages/TimeLine/TimeLine";
 import Stats from "../pages/Stats/Stats";
 import FriendDetails from "../pages/FriendAbout/FriendAbout";
 import FriendAbout from "../pages/FriendAbout/FriendAbout";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   { 
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
             Component: FriendAbout
         },
     ],
+    errorElement: <ErrorPage />
   },
 ]);
 

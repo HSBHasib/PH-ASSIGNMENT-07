@@ -30,3 +30,4 @@ const FriendsDets = ({data}) => {
 }
 
 export default FriendsDets
+

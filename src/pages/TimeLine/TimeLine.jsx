@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { FriendsContext } from '../../context/friendsDataProvider';
+import { FriendsContext } from '../../context/FriendsDataProvider';
 import callImg from "../../assets/image/call.png";
 import textImg from "../../assets/image/text.png";
 import videoImg from "../../assets/image/video.png";

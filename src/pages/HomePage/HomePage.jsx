@@ -4,7 +4,7 @@ import Friends from '../../components/HomePage/Friends/Friends'
 
 const HomePage = () => {
   return (
-    <div className='bg-[#F8FAFC]'>
+    <div>
       <Banner />
       <Friends />
     </div>

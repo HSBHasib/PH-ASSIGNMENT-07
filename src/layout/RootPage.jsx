@@ -6,7 +6,7 @@ import Footer from '../components/HomePage/Footer/Footer'
 
 const RootPage = () => {
   return (
-    <div>
+    <div className='bg-[#F8FAFC]'>
       <Navber />
       <Outlet />
       <Footer />

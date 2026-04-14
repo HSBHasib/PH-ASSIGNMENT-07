@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react'
+import { toast } from 'react-toastify';
 
 export const FriendsContext = createContext();
 
@@ -17,8 +18,10 @@ const FriendsDataProvider = ({children}) => {
         date: formattedDate
     };
 
+    toast.success(`${type} with ${currentData.name}`);
     setFriendsContactData((prevData) => [...prevData, newInteraction]);    
     };
+
 
     const data = {
         friendsContactData,

@@ -4,9 +4,13 @@ import './index.css'
 import { RouterProvider } from 'react-router'
 import { router } from './routes/Routes.jsx'
 import FriendsDataProvider from './context/friendsDataProvider.jsx'
+import { ToastContainer } from 'react-toastify'
 
 createRoot(document.getElementById('root')).render(
   <FriendsDataProvider>
      <RouterProvider router={router} />
+
+     {/* React Toastify */}
+     <ToastContainer />
   </FriendsDataProvider>,
 )

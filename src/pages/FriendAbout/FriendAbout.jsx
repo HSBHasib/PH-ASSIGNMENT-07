@@ -4,7 +4,7 @@ import { MdOutlineTextsms } from 'react-icons/md';
 import { PiBellSimpleZ, PiClockCounterClockwiseBold, PiVideoCameraBold } from 'react-icons/pi';
 import { RiArchiveLine, RiDeleteBinLine } from 'react-icons/ri';
 import { Link, useLoaderData, useParams } from 'react-router';
-import { FriendsContext } from '../../context/friendsDataProvider';
+import { FriendsContext } from '../../context/FriendsDataProvider';
 
 const FriendAbout = () => {
     const friendData = useLoaderData();
@@ -127,65 +127,6 @@ const FriendAbout = () => {
                             </button>
                         </div>
                     </div>
-
-                    {/* Recent Interactions */}
-                    <div className="bg-white p-6 rounded-lg border border-slate-200 shadow-sm ">
-                        <div className="flex justify-between items-center mb-4">
-                            <h2 className="text-xl font-semibold text-[#244D3F]">Recent Interactions</h2>
-                            <button className="flex items-center gap-1.5 px-3 py-1 border border-gray-200 rounded text-sm text-[#1F2937] hover:bg-gray-50">
-                            <PiClockCounterClockwiseBold size={16} /> Full History
-                            </button>
-                        </div>
-
-                        <div className="divide-y divide-gray-200">
-                            <div className="flex justify-between items-center py-4">
-                            <div className="flex items-center gap-3">
-                                <MdOutlineTextsms size={24} className="text-gray-700" />
-                                <div>
-                                <p className="font-semibold text-[#1F2937] leading-tight">Text</p>
-                                <p className="text-sm text-[#64748B]">Asked for career advice</p>
-                                </div>
-                            </div>
-                            <span className="text-sm text-[#64748B]">Jan 28, 2026</span>
-                            </div>
-
-                            <div className="flex justify-between items-center py-4">
-                            <div className="flex items-center gap-4">
-                                <FiPhoneCall size={22} className="text-gray-700" />
-                                <div>
-                                <p className="font-semibold text-[#1F2937] leading-tight">Meetup</p>
-                                <p className="text-sm text-[#64748B]">Industry conference meetup</p>
-                                </div>
-                            </div>
-                            <span className="text-sm text-[#64748B]">Jan 28, 2026</span>
-                            </div>
-
-                            <div className="flex justify-between items-center py-4">
-                            <div className="flex items-center gap-4">
-                                <PiVideoCameraBold size={22} className="text-gray-700" />
-                                <div>
-                                <p className="font-semibold text-[#1F2937] leading-tight">Video</p>
-                                <p className="text-sm text-[#64748B]">Asked for career advice</p>
-                                </div>
-                            </div>
-                            <span className="text-sm text-[#64748B]">Jan 28, 2026</span>
-                            </div>
-
-                            <div className="flex justify-between items-center pt-4">
-                            <div className="flex items-center gap-4">
-                                <FiPhoneCall size={22} className="text-gray-700" />
-                                <div>
-                                <p className="font-semibold text-[#1F2937] leading-tight">Text</p>
-                                <p className="text-sm text-[#64748B]">Asked for career advice</p>
-                                </div>
-                            </div>
-                            <span className="text-sm text-[#64748B]">Jan 28, 2026</span>
-                            </div>
-
-                        </div>
-                        </div>
-
-
                 </div>
             </div>
         </div>

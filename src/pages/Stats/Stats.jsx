@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FriendsContext } from '../../context/friendsDataProvider';
+import { FriendsContext } from '../../context/FriendsDataProvider';
 import { Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
 import { Link } from 'react-router';
 

@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 const ErrorPage = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className="min-h-screen bg-[#F8FAFC] flex items-center justify-center px-6">
             <div className="max-w-md w-full text-center">
@@ -33,21 +36,11 @@ const ErrorPage = () => {
                         Back to Home
                     </Link>
                     
-                    <button 
-                        onClick={() => window.history.back()}
+                    <button onClick={() => navigate(-1)}
                         className="w-full sm:w-auto px-8 py-3 border border-slate-200 text-slate-600 font-semibold rounded-xl hover:bg-slate-50 transition-all duration-200"
-                    >
+                        >
                         Go Back
                     </button>
-                </div>
-
-                {/* Bottom Graphic */}
-                <div className="mt-12 opacity-40">
-                    <div className="flex justify-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-slate-300 animate-bounce"></div>
-                        <div className="w-2 h-2 rounded-full bg-slate-300 animate-bounce [animation-delay:-.3s]"></div>
-                        <div className="w-2 h-2 rounded-full bg-slate-300 animate-bounce [animation-delay:-.5s]"></div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 
 const FriendsDets = ({data}) => {
     const {id, picture, name, days_since_contact, tags, status} = data;
+
   return (
     <Link to={`/friendAbout/${id}`}>
       <div className='space-y-2 hover:shadow-md h-54 bg-white shadow flex flex-col items-center justify-center py-[105px] rounded-md'>

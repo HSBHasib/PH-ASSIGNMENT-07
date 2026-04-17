@@ -10,7 +10,7 @@ const FriendsDets = ({data}) => {
         <div className='rounded-full'>
             <img className='w-14 h-14 object-cover rounded-full' src={picture} alt="name image" />
         </div>
-        <p>{name}</p>
+        <p className='font-semibold'>{name}</p>
         <p className='text-[#64748B] text-[13px]'>{days_since_contact}d ago</p>
         <div className='flex gap-2'>
             {
